@@ -1,0 +1,89 @@
+form.task-form-container {
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task-form-container input,
+.task-form-container button,
+.task-form-container textarea,
+.input-task-time-date-container input {
+    font-size: 16px;
+    padding: 6px;
+}
+
+.task-input-fields {
+    padding: 6px;
+}
+
+#input-task-title {
+    border: none;
+    border-bottom: 2px #5f6368 solid;
+    font-size: 20px;
+    border-radius: 2px;
+    background-color: transparent;
+    outline: none;
+}
+
+#input-task-title:focus,
+#input-task-description:focus {
+    border-bottom: 3px #4273db solid;
+
+}
+
+#input-task-description {
+    background-color: #CED3DA;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+    resize: none;
+    margin-top: 2px;
+}
+
+.input-task-time-date-container {
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.input-task-time-date-container:hover {
+    background-color: #CED3DA;
+
+}
+
+
+.input-task-time-date-container input {
+    background-color: transparent;
+    border: none;
+    position: relative;
+
+    
+}
+
+.input-task-time-date-container input:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0; 
+    height: 1px; 
+    background-color: #5f6368;
+    transition: width 0.3s ease; 
+
+}
+
+.input-task-time-date-container input:hover::after {
+    width: 100%; 
+}
+
+#input-task-date:focus,#input-task-time:focus{
+    outline: none;
+}
+
+
+
+#input-task-time {
+    margin-left: 20px;
+}

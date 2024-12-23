@@ -1,0 +1,44 @@
+.task-component-container {
+    display: flex;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+#task-highlighter {
+    border: 3px solid #DFDFDF;
+    border-radius: 4px 0px 0px 4px;
+    opacity: 0;
+}
+
+.task-component-container:hover #task-highlighter {
+    opacity: 1;
+}
+
+
+.task-component-content-container {
+    width: 100%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#task-title-title{
+    flex-grow: 1;
+    margin-left: 5px;
+}
+
+
+#task-show-more-icon-container {
+    border: 2px #5f6368 solid;
+    padding: 3px;
+    margin-right: 7px;
+}
+
+
+#task-show-more-icon-container:hover{
+  background-color: #DFDFDF;
+}
