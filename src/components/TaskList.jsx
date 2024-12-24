@@ -1,12 +1,18 @@
-import React from "react"; 
-import Task from "./Task";
+import React from "react";
+import TaskItem from "./TaskItem";
 
-function TaskList(){
+function TaskList({ tasks }) {
     return (
         <div className="task-master-app-components">
 
             <h1>Here we will render tasks.</h1>
-            <Task/>
+
+            {
+                tasks.map((task,index) =>(
+                    <TaskItem key={index} task={task} />
+                ))
+            }
+
         </div>
     );
 }
