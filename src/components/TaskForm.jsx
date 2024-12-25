@@ -60,19 +60,22 @@ function TaskForm() {
         });
     }
 
+
+
     return (
-        <>        <form className="task-form-container task-master-app-components" onSubmit={handleSaveTaskForm}>
-            <input type="text" id="input-task-title" name="inputTaskTitle" placeholder="Add title" onChange={handleATaskInputChange} value={aTaskFormData.inputTaskTitle} />
+        <>
+            <form className="task-form-container task-master-app-components" onSubmit={handleSaveTaskForm}>
+                <input type="text" id="input-task-title" name="inputTaskTitle" placeholder="Add title" onChange={handleATaskInputChange} value={aTaskFormData.inputTaskTitle} />
 
-            <div className="input-task-time-date-container">
-                <input type="date" id="input-task-date" name="input-date" />
-                <input type="time" id="input-task-time" name="input-time" />
-            </div>
+                <div className="input-task-time-date-container">
+                    <input type="date" id="input-task-date" name="input-date" />
+                    <input type="time" id="input-task-time" name="input-time" />
+                </div>
 
-            <textarea id="input-task-description" name="inputTaskDescription" rows="3" placeholder="Add description" onChange={handleATaskInputChange} value={aTaskFormData.inputTaskDescription} />
+                <textarea id="input-task-description" name="inputTaskDescription" rows="3" placeholder="Add description" onChange={handleATaskInputChange} value={aTaskFormData.inputTaskDescription} />
 
-            <button type="submit" id="submit-task-btn">Save</button>
-        </form>
+                <button type="submit" id="submit-task-btn">Save</button>
+            </form>
 
             <TaskList tasks={taskList} />
         </>

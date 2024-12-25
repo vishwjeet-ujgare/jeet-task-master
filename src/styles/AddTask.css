@@ -1,0 +1,29 @@
+.add-task-component-container {
+    margin-top: 20px;
+    background-color: #AB4343;
+    color: #ecd6d69e;
+    border: 3px dotted grey;
+
+    /* for temp use */
+    margin-bottom: 50px;
+}
+
+.add-task-component-container:hover {
+    border-color: rgb(213, 213, 213);
+    color: rgb(213, 213, 213);
+    cursor: pointer;
+
+}
+
+.add-task-content-wrapper {
+    padding: 20px 8px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-task-content-wrapper p {
+    font-weight: bolder;
+}

@@ -1,0 +1,28 @@
+.task-list-heading-container{
+    /* background-color: white; */
+    padding: 0px 5px 10px 0px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #E3B6B6;
+}
+
+
+
+.task-list-title{
+    color: white;
+}
+.task-list-heading-container .task-list-more-option-icon-wrapper{
+    background-color: #ffffff51;
+    color: #EDEDED;
+    border: none;
+    border-radius: 3px;
+   padding: 3px 4px 2px 3px;
+}
+
+.task-list-more-option-icon-wrapper:hover{
+    background-color: #ffffff89;
+    color: white;
+    cursor:pointer
+}
